@@ -1,16 +1,13 @@
 spots = ['Kagoshima','Ostersund','Almaty','Ulaanbaatar']
-spots.each do | ville |
-	puts "#{ville}"
-end
 
 trips = [
-	 {spots:"Kagoshima", Duration:90},
-	 {spots:"Ostersund", Duration:30},
-	 {spots:"Almaty"   , Duration:30},
-	 {spots:"Ulaanbaat", Duration:30}
+	 {spot: "Kagoshima", Duration: 90},
+	 {spot: "Ostersund", Duration: 30},
+	 {spot: "Almaty"   , Duration: 30},
+	 {spot: "Ulaanbaat", Duration: 30}
         ] 
 
-spots.each do | trip |
-	puts "Trip a ""#{trip}"" de spots["Duration"] jours"
+trips.each do | trip |
+	puts "Trip a #{trip[:spot]} de #{trip[:Duration]} jours" 
 end
 
